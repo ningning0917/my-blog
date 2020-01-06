@@ -1,0 +1,779 @@
+{
+  "config": {
+    "session": {
+      "maxAge": 604800000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true,
+      "renew": true
+    },
+    "security": {
+      "domainWhiteList": [
+        "http://localhost:8257",
+        "http://webrabbit.free.idcfengye.com",
+        ".qq.com",
+        "http://127.0.0.1:7001"
+      ],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": false,
+        "type": "ctoken",
+        "ignoreJSON": true,
+        "useSession": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf",
+        "refererWhiteList": [],
+        "ignore": "/\\/admin/"
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true
+      },
+      "methodnoallow": {
+        "enable": true
+      },
+      "noopen": {
+        "enable": true
+      },
+      "nosniff": {
+        "enable": true
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "checkAddress": null
+      },
+      "_protocolWhiteListSet": "<Set>"
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-onerror/lib/onerror_page.mustache"
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieDomain": "",
+      "cookieMaxAge": "1y"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-watcher/lib/event-sources/development"
+      }
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "egg-schedule.log"
+      }
+    },
+    "schedule": {
+      "directory": []
+    },
+    "multipart": {
+      "mode": "stream",
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": "100kb",
+      "fields": 10,
+      "fileSize": "10mb",
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null,
+      "tmpdir": "/var/folders/f6/nd8ydvsx5nd8kgcj9_3c7l2m0000gn/T/egg-multipart-tmp/egg_study",
+      "cleanSchedule": {
+        "cron": "0 30 4 * * *"
+      }
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "/Users/wk/Documents/my/my-blog/blogbackend/app/public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000
+    },
+    "view": {
+      "root": "/Users/wk/Documents/my/my-blog/blogbackend/app/view",
+      "cache": false,
+      "defaultExtension": ".html",
+      "defaultViewEngine": "nunjucks",
+      "mapping": {
+        ".html": "nunjucks"
+      }
+    },
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": false
+    },
+    "sequelize": {
+      "dialect": "mysql",
+      "database": "egg_study",
+      "host": "127.0.0.1",
+      "port": "3306",
+      "username": "root",
+      "password": "<String len: 4>",
+      "enable": true,
+      "define": {
+        "timestamps": false,
+        "paranoid": true,
+        "freezeTableName": true,
+        "underscored": false
+      },
+      "dialectOptions": {
+        "dateStrings": true,
+        "typeCast": "<Function typeCast>"
+      },
+      "pool": {
+        "max": 5,
+        "min": 0,
+        "idle": 10000
+      },
+      "timezone": "+08:00"
+    },
+    "cors": {
+      "origin": "*",
+      "credentials": true,
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+    },
+    "lru": {
+      "app": true,
+      "agent": false,
+      "client": {
+        "max": 1000,
+        "maxAge": 86400000
+      }
+    },
+    "redis": {
+      "default": {},
+      "app": true,
+      "agent": false,
+      "supportTimeCommand": true,
+      "clients": {
+        "loginToken": {
+          "port": 6379,
+          "host": "127.0.0.1",
+          "password": "<String len: 0>",
+          "db": 0
+        }
+      }
+    },
+    "oss": {
+      "default": {
+        "timeout": "60s"
+      },
+      "useAgent": false,
+      "client": {
+        "accessKeyId": "LTAI4Fp4JaHT7mdvPrUTngAt",
+        "accessKeySecret": "<String len: 30>",
+        "bucket": "webrabbit",
+        "endpoint": "https://oss-cn-beijing.aliyuncs.com",
+        "timeout": "60s",
+        "uploadHost": "https://webrabbit.oss-cn-beijing.aliyuncs.com"
+      },
+      "app": true,
+      "agent": true
+    },
+    "alinode": {
+      "enable": true,
+      "server": "wss://agentserver.node.aliyun.com:8080",
+      "appid": "77741",
+      "secret": "<String len: 40>",
+      "cmddir": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/commandx",
+      "logdir": "/tmp/",
+      "error_log": [
+        "/Users/wk/Documents/my/my-blog/blogbackend/logs/egg_study/common-error.log",
+        "/Users/wk/Documents/my/my-blog/blogbackend/logs/stderr.log"
+      ],
+      "packages": [
+        "/Users/wk/Documents/my/my-blog/blogbackend/package.json"
+      ],
+      "reconnectDelay": 10,
+      "heartbeatInterval": 60,
+      "reportInterval": 60,
+      "logger": "<EggLogger>",
+      "libMode": true
+    },
+    "passportGithub": {
+      "key": "24c1c928073dc5cd3b4f",
+      "secret": "<String len: 40>",
+      "callbackURL": "/passport/github/callback"
+    },
+    "io": {
+      "init": {},
+      "namespace": {
+        "/": {
+          "connectionMiddleware": [
+            "auth"
+          ],
+          "packetMiddleware": []
+        }
+      }
+    },
+    "env": "local",
+    "name": "egg_study",
+    "keys": "<String len: 12>",
+    "proxy": false,
+    "maxIpsCount": 0,
+    "maxProxyCount": 0,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "egg_study",
+      "version": "1.0.0",
+      "description": "a study egg project",
+      "private": true,
+      "egg": {
+        "declarations": true
+      },
+      "dependencies": {
+        "axios": "^0.19.0",
+        "co-wechat": "^2.4.0",
+        "co-wechat-api": "^3.10.0",
+        "co-wechat-oauth": "^2.0.1",
+        "dayjs": "^1.8.16",
+        "egg": "^2.15.1",
+        "egg-alinode": "^2.0.1",
+        "egg-cors": "^2.2.2",
+        "egg-lru": "^1.0.1",
+        "egg-oss": "^2.0.0",
+        "egg-passport": "^2.1.0",
+        "egg-passport-github": "^1.0.0",
+        "egg-redis": "^2.4.0",
+        "egg-scripts": "^2.11.1",
+        "egg-sequelize": "^5.2.0",
+        "egg-session": "^3.1.0",
+        "egg-socket.io": "^4.0.0",
+        "egg-view-nunjucks": "^2.2.0",
+        "exceljs": "^3.3.1",
+        "fs-extra": "^8.1.0",
+        "jsonwebtoken": "^8.5.1",
+        "koa-jwt": "^3.6.0",
+        "koa-router": "^7.4.0",
+        "moment": "^2.22.2",
+        "mongoose": "^5.4.4",
+        "mysql2": "^2.0.0",
+        "node-jsencrypt": "^1.0.0",
+        "nodemailer": "^6.4.2",
+        "nodemailer-smtp-transport": "^2.7.4",
+        "stream-wormhole": "^1.1.0",
+        "svg-captcha": "^1.4.0",
+        "xlsx": "^0.15.1"
+      },
+      "devDependencies": {
+        "autod": "^3.0.1",
+        "bcryptjs": "^2.4.3",
+        "autod-egg": "^1.1.0",
+        "egg-bin": "^4.11.0",
+        "egg-ci": "^1.11.0",
+        "egg-mock": "^3.21.0",
+        "eslint": "^5.13.0",
+        "eslint-config-egg": "^7.1.0",
+        "sequelize-cli": "^5.5.1",
+        "mocha": "^1.2.2",
+        "acorn": "^7.1.0",
+        "typescript": "^2.8.0"
+      },
+      "engines": {
+        "node": ">=10.0.0"
+      },
+      "scripts": {
+        "start": "egg-scripts start --workers=1 --title=egg-server-study --daemon",
+        "stop": "egg-scripts stop --title=egg-server-study",
+        "dev": "egg-bin dev",
+        "dev:sticky": "egg-bin dev --cluster --sticky",
+        "start:sticky": "egg-scripts start --sticky",
+        "debug": "egg-bin debug",
+        "test": "npm run lint -- --fix && npm run test-local",
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "ci": "npm run lint && npm run cov",
+        "autod": "autod",
+        "createTable": "npx sequelize migration:generate --name=init-label",
+        "migrate:up": "npx sequelize db:migrate",
+        "migrate:down": "npx sequelize db:migrate:undo",
+        "createModel": "npx sequelize model:create --name shops --attributes 'name:string'",
+        "createSeed": "npx sequelize seed:create --name init-shops",
+        "eggrun": "egg-scripts start"
+      },
+      "ci": {
+        "version": "10"
+      },
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "author": "websmallrabbit",
+      "license": "MIT"
+    },
+    "baseDir": "\\x7e/Documents/egg/my/egg-study",
+    "HOME": "/Users/wk",
+    "rundir": "/Users/wk/Documents/my/my-blog/blogbackend/run",
+    "dump": {
+      "ignore": "<Set>"
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "<Buffer len: 6463>"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "1mb",
+      "jsonLimit": "1mb",
+      "textLimit": "1mb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      },
+      "onerror": "<Function onerror>"
+    },
+    "logger": {
+      "dir": "/Users/wk/Documents/my/my-blog/blogbackend/logs/egg_study",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "INFO",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "egg_study-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "type": "agent"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheLookupInterval": 10000,
+      "dnsCacheMaxLength": 1000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      }
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "meta",
+      "siteFile",
+      "notfound",
+      "bodyParser",
+      "overrideMethod"
+    ],
+    "workerStartTimeout": 600000,
+    "serverTimeout": null,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 7001,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "private_key": "-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQCK3siV2MKl7ADFMajEsbc/ZrSTfo9h37c6+m0cUHOTqGR4V+Ug\nzc5Wzpcrz6QGu7/umQBJRC3LZ8xRW8+J6Z1lI0+Tr6LT8NfLUeyBTBXkBI1j0BIz\nmEjsW/a1vDr2ahXn1RFvtnHeKs41lbICkY7mRA2cAyiMWhrteM1d1MR3gQIDAQAB\nAoGACUU8ELzKqbbqij95a8ANYp8hmOMPAVKk8bv8ArLgNFA+fMYpVppGlwbtkpAm\n/AgWlQADw+BYSkbgneHKJgPBbQB+G8/AmMY/u3KIFS4wJifaIAv2evDlFqtw2zI6\nbG7bg65YF9AS1l9B+O3IdqMDNBKqQYiItx1A/SfogAXJctECQQDeIzh3k8mkzyMe\nlxrFY5kJ5u+ydse82nOmawxo3kS/WEZh2jadeUdAXvXDhXrQ4O1t8zrG4gY6sAq4\n3KqeouBdAkEAoAobkEY/M/Rtya8tomm3Dg9+Hc9yNphVr8fG3tLpphALuGSP+0Qp\n9ONyoC4G71MnIPtqBl6JDNzKARY2NUjRdQJBANw/57kIW6KBjrzB7dVRD2h2BavZ\ngemKX6jd8wv3dgqSqBZVmllA6pi0jtEyA7gfjMq7o8eWS77c1YS9pp5ruDECQQCJ\nEp8xHzmbAkvWZpgrd2g2PsbCOZ+VazxY5j9LMlK0zSF8uYUorOVSvky7LTD7Yrks\n4qmY8vdncOQDskaTtN7RAkBc/3Brhc5eG0/XHqKrATY+H0GD/muzpLSLuDXVjgqh\nlEYH3FAsW+VP5dQ6AuzW+wkFDbztdvr5MF9Mluyxc3Fe\n-----END RSA PRIVATE KEY-----",
+    "public_key": "-----BEGIN PUBLIC KEY-----\n  MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCK3siV2MKl7ADFMajEsbc/ZrST\nfo9h37c6+m0cUHOTqGR4V+Ugzc5Wzpcrz6QGu7/umQBJRC3LZ8xRW8+J6Z1lI0+T\nr6LT8NfLUeyBTBXkBI1j0BIzmEjsW/a1vDr2ahXn1RFvtnHeKs41lbICkY7mRA2c\nAyiMWhrteM1d1MR3gQIDAQAB\n-----END PUBLIC KEY-----",
+    "login_token_time": 604800000,
+    "middleware": [
+      "jwt",
+      "saveSession",
+      "errorHandler"
+    ],
+    "jwt": {
+      "enable": true,
+      "ignore": [
+        "/",
+        "/study/login",
+        "/study/register",
+        "/study/uploadFile",
+        "/study/github",
+        "/study/github_callback",
+        "/home/index",
+        "/study/githubLogin",
+        "/passport/github"
+      ]
+    },
+    "email": {
+      "service": "QQ",
+      "user": "1520521891@qq.com",
+      "pass": "<String len: 17>"
+    },
+    "client_id": "6fd9bb9ad92200bb9191",
+    "client_secret": "<String len: 40>",
+    "mail_opts": {
+      "host": "smtp.163.com",
+      "port": 25,
+      "auth": {
+        "user": "websmallrabbit@163.com",
+        "pass": "<String len: 12>"
+      },
+      "ignoreTLS": true
+    },
+    "weChatOAuth": {
+      "appId": "wxa2508b52448eb2fa",
+      "secret": "<String len: 32>"
+    },
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
+  },
+  "plugins": {
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-session",
+      "version": "3.1.0"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security",
+      "version": "2.7.1"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-jsonp",
+      "version": "2.0.0"
+    },
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-onerror",
+      "version": "2.1.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-i18n",
+      "version": "2.1.1"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-watcher",
+      "version": "3.1.0"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-schedule",
+      "version": "3.6.4"
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart",
+      "version": "2.9.1"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-development",
+      "version": "2.4.3"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator",
+      "version": "3.1.0"
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-static",
+      "version": "2.2.0"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view",
+      "version": "2.1.2"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view-nunjucks",
+      "version": "2.2.0"
+    },
+    "sequelize": {
+      "enable": true,
+      "package": "egg-sequelize",
+      "name": "sequelize",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-sequelize",
+      "version": "5.2.0"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-cors",
+      "version": "2.2.3"
+    },
+    "lru": {
+      "enable": true,
+      "package": "egg-lru",
+      "name": "lru",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-lru",
+      "version": "1.0.1"
+    },
+    "redis": {
+      "enable": true,
+      "package": "egg-redis",
+      "name": "redis",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-redis",
+      "version": "2.4.0"
+    },
+    "oss": {
+      "enable": true,
+      "package": "egg-oss",
+      "name": "oss",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-oss",
+      "version": "2.0.0"
+    },
+    "alinode": {
+      "enable": true,
+      "package": "egg-alinode",
+      "name": "alinode",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-alinode",
+      "version": "2.0.1"
+    },
+    "passport": {
+      "enable": true,
+      "package": "egg-passport",
+      "name": "passport",
+      "dependencies": [
+        "session"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-passport",
+      "version": "2.1.0"
+    },
+    "passportGithub": {
+      "enable": true,
+      "package": "egg-passport-github",
+      "name": "passportGithub",
+      "dependencies": [
+        "passport"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-passport-github",
+      "version": "1.0.0"
+    },
+    "io": {
+      "enable": true,
+      "package": "egg-socket.io",
+      "name": "io",
+      "dependencies": [
+        "session"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wk/Documents/my/my-blog/blogbackend/config/plugin.js",
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-socket.io",
+      "version": "4.1.6"
+    }
+  }
+}

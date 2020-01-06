@@ -1,0 +1,23 @@
+version: '2'
+services:
+  dhealth-front:
+    container_name: pds-prod-dhealth-front
+    image: reg.shie.com.cn/comm/dhealth-front:VERSION
+    labels:
+      - "traefik.backend=pds-prod-dhealth-front"
+      - "traefik.frontend.rule=Host:dhealth.shie.com.cn"
+      - "traefik.port=80"
+    volumes:
+      - ./logs:/usr/local/tomcat/logs
+      - ~/prod_cache:/usr/local/prod_cache
+    hostname: pds-prod-dhealth-front
+    restart: always
+    environment:
+      - ENV_NAME=prod
+      - JAVA_OPTS=-Xmx1024m -Xms512m -XX:PermSize=256m -XX:MaxPermSize=512m -XX:+PrintGCDetails -XX:+PrintGCDauatamps
+    networks:
+      lifepmsnet:
+networks:
+  lifepmsnet:
+    external:
+      name: traefik_webgateway

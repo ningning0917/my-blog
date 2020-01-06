@@ -1,0 +1,103 @@
+<template>
+  <div :class="{'hidden':hidden}" class="pagination-container">
+    <el-pagination
+      :background="background"
+      :current-page.sync="currentPage"
+      :page-size.sync="pageSize"
+      :layout="layout"
+      :page-sizes="pageSizes"
+      :total="total"
+      v-bind="$attrs"
+      @size-change="handleSizeChange"
+      @current-change="handleCurrentChange"
+    />
+  </div>
+</template>
+
+<script>
+import { scrollTo } from '@/utils/scroll-to'
+
+export default {
+  name: 'Pagination',
+  props: {
+    total: {
+      required: true,
+      type: Number
+    },
+    page: {
+      type: Number,
+      default: 1
+    },
+    limit: {
+      type: Number,
+      default: 20
+    },
+    pageSizes: {
+      type: Array,
+      default() {
+        return [10, 20, 30, 50]
+      }
+    },
+    layout: {
+      type: String,
+      default: 'total, sizes, prev, pager, next, jumper'
+    },
+    background: {
+      type: Boolean,
+      default: true
+    },
+    autoScroll: {
+      type: Boolean,
+      default: true
+    },
+    hidden: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    currentPage: {
+      get() {
+        return this.page
+      },
+      set(val) {
+        this.$emit('update:pageNo', val)
+      }
+    },
+    pageSize: {
+      get() {
+        return this.limit
+      },
+      set(val) {
+        this.$emit('update:pageSize', val)
+      }
+    }
+  },
+  methods: {
+    handleSizeChange(val) {
+      console.log('pageSize1:', val, 'pageNo1', this.currentPage)
+      this.$emit('pagination', { pageNo: this.currentPage, pageSize: val })
+      if (this.autoScroll) {
+        scrollTo(0, 800)
+      }
+    },
+    handleCurrentChange(val) {
+      console.log('pageSize2:', this.pageSize, 'pageNo2', val)
+      this.$emit('pagination', { pageNo: val, pageSize: this.pageSize })
+      if (this.autoScroll) {
+        scrollTo(0, 800)
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+.pagination-container {
+  background: #fff;
+  padding: 0 16px 32px 16px;
+}
+.pagination-container.hidden {
+  display: none;
+}
+</style>

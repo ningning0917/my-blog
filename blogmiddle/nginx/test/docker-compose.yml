@@ -1,0 +1,20 @@
+version: '2'
+services:
+  dhealth-front:
+    container_name: comm-test-dhealth-front
+    image: reg-dev.shie.com.cn/shie-test/dhealth-front:test
+    volumes:
+      - ./logs:/usr/local/tomcat/logs
+      - ~/prod_cache:/usr/local/prod_cache
+    restart: always
+    environment:
+      - ENV_NAME=test
+ #   user: root
+    ports:
+      - 19907:80
+    networks:
+      lifepmsnet:
+networks:
+  lifepmsnet:
+    external:
+      name: comm_net

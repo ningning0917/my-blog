@@ -1,0 +1,468 @@
+{
+  "baseDir": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "keys": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "private_key": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "public_key": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "view": {
+    "defaultViewEngine": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "mapping": {
+      ".html": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+    },
+    "root": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view/config/config.default.js"
+  },
+  "login_token_time": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "session": {
+    "key": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "httpOnly": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "encrypt": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "renew": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "maxAge": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "redis": {
+    "clients": {
+      "loginToken": {
+        "port": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+        "host": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+        "password": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+        "db": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+      }
+    },
+    "default": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-redis/config/config.default.js",
+    "app": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-redis/config/config.default.js",
+    "agent": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-redis/config/config.default.js",
+    "supportTimeCommand": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-redis/config/config.default.js"
+  },
+  "lru": {
+    "client": {
+      "max": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+      "maxAge": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+    },
+    "app": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "agent": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "middleware": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "jwt": {
+    "enable": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "ignore": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "email": {
+    "service": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "user": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "pass": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "client_id": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "client_secret": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+      "ignoreJSON": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+      "ignore": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+      "type": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "protocolWhiteList": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "credentials": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "allowMethods": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "alinode": {
+    "enable": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "server": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "appid": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "secret": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "logdir": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "cmddir": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-alinode/config/config.default.js",
+    "error_log": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-alinode/config/config.default.js",
+    "packages": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-alinode/config/config.default.js",
+    "reconnectDelay": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-alinode/config/config.default.js",
+    "heartbeatInterval": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-alinode/config/config.default.js",
+    "reportInterval": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-alinode/config/config.default.js"
+  },
+  "passportGithub": {
+    "key": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "secret": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "callbackURL": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "mail_opts": {
+    "host": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "port": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "auth": {
+      "user": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+      "pass": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+    },
+    "ignoreTLS": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "weChatOAuth": {
+    "appId": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+    "secret": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+  },
+  "io": {
+    "namespace": {
+      "/": {
+        "connectionMiddleware": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js",
+        "packetMiddleware": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.default.js"
+      }
+    },
+    "init": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-socket.io/config/config.default.js"
+  },
+  "sequelize": {
+    "enable": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "dialect": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "host": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "port": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "username": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "password": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "database": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "define": {
+      "timestamps": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "paranoid": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "freezeTableName": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "underscored": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js"
+    },
+    "dialectOptions": {
+      "dateStrings": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "typeCast": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js"
+    },
+    "pool": {
+      "max": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "min": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "idle": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js"
+    },
+    "timezone": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js"
+  },
+  "oss": {
+    "client": {
+      "accessKeyId": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "accessKeySecret": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "bucket": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "endpoint": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "timeout": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+      "uploadHost": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js"
+    },
+    "app": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "agent": "/Users/wk/Documents/my/my-blog/blogbackend/config/config.local.js",
+    "default": {
+      "timeout": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-oss/config/config.default.js"
+    },
+    "useAgent": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-oss/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-static/config/config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg-view-nunjucks/config/config.local.js"
+  },
+  "env": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "name": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "version": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "description": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "private": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "axios": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "co-wechat": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "co-wechat-api": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "co-wechat-oauth": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "dayjs": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-alinode": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-lru": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-oss": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-passport": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-passport-github": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-redis": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-session": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-socket.io": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "exceljs": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "fs-extra": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "koa-jwt": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "koa-router": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "moment": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "mongoose": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "node-jsencrypt": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "nodemailer": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "nodemailer-smtp-transport": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "stream-wormhole": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "svg-captcha": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "xlsx": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "bcryptjs": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "sequelize-cli": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "mocha": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "acorn": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "stop": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "dev": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "dev:sticky": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "start:sticky": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "debug": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "test": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "cov": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "lint": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "ci": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "autod": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "createTable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "migrate:up": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "migrate:down": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "createModel": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "createSeed": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "eggrun": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "url": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "license": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "HOME": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "strict": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "depth": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "env": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "level": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "logging": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "port": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/wk/Documents/my/my-blog/blogbackend/node_modules/egg/config/config.default.js"
+}

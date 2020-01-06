@@ -1,0 +1,27 @@
+<!doctype html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <!-- <link href="https://cdn.bootcss.com/layer/1.8.5/skin/layer.min.css" rel="stylesheet"> -->
+</head>
+    <body style="height: 100%; margin: 0">
+        <button class="layui-btn-primary layui-btn layui-btn-small" id="changeView" style="width: 115px;display: block;z-index: 999">
+            <i class="layui-icon" style="font-size: 30px; color: #1E9FFF;" >&#xe638;</i>
+            <span>切换数据监控</span>
+        </button>
+        <div id="container" style="height: 100%;display: none"></div>
+        <div id="radarL">
+            <br /><br /><br />
+            <div class="welcome">全国数字健康保险交易示范平台</div>
+            <a href="javascript:void(0)" id="radar-switch-btn"></a>
+            <div class="radar"></div>
+        </div>
+    </body>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/welcome.js"></script>
+</html>
+
